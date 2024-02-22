@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/viewplaylist.css/}">
+<style>
+ul{
+  list-style:none;
+}
+</style>
+</head>
+<body>
+
+<div class="logout">
+<form action="/logout" method="post">
+  <input type="submit" value="LOGOUT" class="out">
+</form>
+</div>
+<br/>
+  <table border="1" class="center">
+     <tr>
+       
+       <td>Play List name</td>
+       <td>PlayList Songs</td>
+     </tr>   
+       
+       <tr th:each="plist:${plist}">
+      
+         
+          <td th:text="${plist.name}"></td>
+         
+         <td>
+           <ul th:each="ss:${plist.songs}">
+           <span th:text="${ss.name}"></span>
+             <li>
+                <audio controls>
+                    <source th:src="${ss.link}"type="audio/mpeg">
+                </audio>
+              </li>
+           </ul>
+         </td>
+          
+     </tr>
+     
+  </table>
+
+</body>
+</html>

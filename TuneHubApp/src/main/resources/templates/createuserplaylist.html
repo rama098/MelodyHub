@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Create User Play List</title>
+<link rel="stylesheet" th:href="@{/css/createplaylist.css}">
+<style>
+ h1{
+ color:cyan;
+ text-align:center;
+ }
+ input{
+ text-align:center;
+ 
+ }
+ label{
+ color:white;
+ font-size:30px;
+ }
+
+ 
+</style>
+</head>
+<body>
+
+<h1>User Create Play List</h1>
+
+  <form action="/m-creatuserplaylist"method="post">
+    <label >Play List Name</label><br/>
+    <input type="text" name="name" placeholder="Enter Play List Name" />
+     
+     <br/><br/>
+     
+     <div th:each="songs:${songs}">
+     <input type="checkbox"th:name="songs" th:value="${songs.id}">
+     <lable th:text="${songs.name}">
+     </div>
+     
+     <br/>
+     
+     <input type="submit" value="CREATE PlayList " class="btn">
+  </form>
+  
+  <form action="/logout"method="post">
+ <input type="submit" value="LOGOUT" class="logout">
+</form>
+
+</body>
+</html>

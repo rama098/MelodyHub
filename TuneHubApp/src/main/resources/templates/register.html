@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link  rel="stylesheet" th:href="@{/css/register.css}"/>
+
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body >
+<div class="form">
+
+  <form action="/register" method="post">
+  
+  <h1 style=color:orange>Register</h1>
+    <label class="input-box">User name:<i style=color:coral class='bx bxs-user'></i></label><br/>
+    <input type="text" name="username" required placeholder="Enter User Name"/>
+    <br><br>
+    <label class="input-box">Email Id:<i style=color:coral class='bx bx-envelope'></i></label><br/>
+    <input type="email" name="email" required placeholder="Enter Email Id" />
+    <br><br>
+    <label class="input-box">Password:<i style=color:coral class='bx bxs-lock-alt'></i></label><br/>
+    <input type="password" name="password" placeholder="Enter Password"required >
+
+    <br><br>
+    
+    <label class="input-box">Gender:</label><br/>
+     <input type="radio" name="gender" value="male" />Male
+    
+     <input type="radio" name="gender" value="female"/>Female
+     
+     <input type="radio" name="gender" value="others"/>Others
+     
+     <br><br>
+     
+     <label class="input-box">Role:</label><br/>
+     <input type="radio"name="Role" value="admin"/>Admin
+     <input type="radio"name="Role" value="user"/>User
+     
+     <br><br>
+     
+     <label class="input-box">Address:</label><br/>
+     <textarea name="address"placeholder="Enter Your Address"></textarea>
+     
+     <br><br>
+    <input  type="submit"  value="REGISTER" class="btn"/>
+    
+  
+  
+  </form>
+  </div>
+
+</body>
+</html>

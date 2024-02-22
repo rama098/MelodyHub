@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/login.css}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+<div class="form">
+<h1>Login</h1>
+  <form action="/login" method="post">
+  
+   <label>Email Id: <i class='bx bx-envelope'></i> </label><br/>
+   <input type="email" name="email" required placeholder="Enter Email Id">
+   
+   <br><br>
+   
+   <lable style=font-size:25px>Password: <i class='bx bxs-lock-alt'></i> </lable><br/>
+  <input type="password" name="password" required placeholder="Enter Password"><br>
+  <a href="/map-forgot">Forgot Password</a>
+  <br><br>
+  
+  <input type="submit" value="Login" class="btn" size="100">
+  </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/customerviewsongs.css/}">
+</head>
+<body>
+
+ <h2>All Songs</h2>
+ <div class="div">
+ <form action="/logout">
+   <input type="submit" value="LOGOUT" class="out">
+ </form>
+ </div>
+ <br/>
+ <div class="song-table">
+  <table border="1" class="song-table">
+    <tr>
+      
+       <th>Song Name</th>
+       <th>Artist</th>
+       <th>Genre</th>
+       <th>Link</th>
+    </tr>
+    <tr th:each="songs: ${songs} ">
+   
+       
+       <td th:text=" ${songs.name} "></td>
+       <td th:text=" ${songs.artist} "></td>
+       <td th:text=" ${songs.genre} "></td>
+      
+       
+      <td> <audio controls>
+       <source th:src=${songs.link} type="audio/mp3">
+       </audio>
+       </td>
+    </tr>
+    </table>
+    </div>
+</body>
+</html>

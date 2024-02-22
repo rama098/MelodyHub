@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+h1{
+	text-align:center;
+	color:blue;
+	border:solid;
+	background-color:white;
+}
+a{
+	background-color: cyan;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+justify-content:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+a:hover{
+	background-color:magenta;
+	color:white;
+	font-size:larger;
+}
+body{
+	text-align:center;
+	background-image:url('/image/customer.jpg');
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}

@@ -1,0 +1,47 @@
+body{
+	
+	 background-image: url('/image/imm.jpg');
+	 background-position: center;
+	   background-size: cover;
+     background-attachment: fixed;
+     background-repeat:no-repeat;
+     height:100vh;
+     width:auto;
+     color:white;
+}
+.form{
+    
+    text-align: center;
+    
+}
+.input-box{
+	color:#5F9EA0;
+	 font-size: 29px;
+	 color:cyan;
+}
+.btn{
+	border:none;
+	padding:10px;
+	cursor:pointer;
+	background-color:red ;
+    color:black;
+    border-right:none;
+      border-radius: 15px;
+}
+.btn:hover{
+  background-color:green;
+  color:white;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  color:red;
+                   
+}
+input{
+	font-size:larger;
+	
+}
+i{
+	font-size:29px;
+}
+textarea{
+	font-size:larger;
+} 

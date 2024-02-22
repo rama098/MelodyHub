@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/createplaylist.css}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+<h2>Add PlayList Here</h2>
+<div class="class">
+<form action="/addplaylist" method="post">
+<lable>PlayList Name:<i class='bx bx-music bx-spin' ></i></lable><br/>
+ <input type="text" name="name" required placeholder="Enter PlayList Name" class="in">
+ 
+ <br><br>
+ 
+   <div th:each="songs:${songs}">
+   <input type="checkbox" th:name="songs" th:value="${songs.id}">
+   <label th:text="${songs.name}"></label>
+   
+ 
+   </div>
+   <br/>
+    <input type="submit" value="ADD PlayList" class="btn">
+  </form>
+ 
+ </div>
+  <form action="/logout" method="post">
+    <input type="submit" value="LOGOUT" class="logout">
+  </form>
+  
+ 
+ 
+
+
+</body>
+</html>

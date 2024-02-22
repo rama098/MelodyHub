@@ -1,0 +1,37 @@
+@charset "ISO-8859-1";
+body{
+	background-color:Black;
+	text-align:center;
+	
+	font-size:larger;
+	color:white;
+}
+td{
+	color:white;
+}
+audio{
+	border:10px solid #004080;
+	border-radius:50px;
+}
+source{
+	background-color:red;
+}
+.center{
+	 margin: 0px auto;
+}
+h2{
+	color:purple;
+}
+.logout{
+text-align:right;
+
+}
+.out{
+	color:cyan;
+	background-color:black;
+	border-radius:20px;
+}
+.out:hover{
+	background-color:orange;
+	color:green;
+}

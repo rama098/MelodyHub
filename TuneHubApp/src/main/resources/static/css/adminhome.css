@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+body{	
+	
+	border-width:100px;
+	border-radius:50px;
+	background-image:url('/image/admin.jpg');
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+}
+h1{
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: black;
+	color:blue;
+	
+}
+h1:hover{
+	color:red;
+}
+
+
+a{
+	text-align:center;
+	font-size:large;
+	color:#ffff00;
+	border:solid;
+	border-radius:10px;
+	background-color:brown;
+	text-decoration:none;
+	border-color:blue;
+}
+a:hover{
+	background-color:magenta;
+	color:white;
+	font-size:larger;
+}
+
+a:active{
+	color:blue;
+	  text-decoration:underline;
+	  background-color:cyan;
+}
+a:link {
+  text-decoration: none;
+  background-color:yellow;
+}
+a {
+  background-color: #444;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  background-color: cyan; /* Green */
+  
+}
+.div{
+	text-align:right;
+	
+}
+.out{
+	border:none;
+	border-radius:10px;
+	width:100px;
+	height:30px;
+	cursor:pointer;
+	background-color:blue;
+	color:white;
+}
+.out:hover{
+	background-color:red;
+	width:150px;
+	height:35px;
+	color:cyan;
+}
+
+
+

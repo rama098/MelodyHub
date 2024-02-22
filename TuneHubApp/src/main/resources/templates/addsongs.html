@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/addsongs.css}">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+<h2>ADD SONGS HERE</h2>
+
+  <form action="/addsongs" method="post">
+  <lable>Song Name:<i class='bx bxl-tiktok bx-spin bx-flip-horizontal' ></i></lable><br/>
+  <input type="text" name="name" placeholder="Enter Song Name" required>
+  
+  <br><br>
+  
+  <label>Song Artist: <i class='bx bx-user'></i></label><br/>
+  <input type="text" name="artist" placeholder="Enter Song Artist" required>
+  
+  <br><br>
+  
+  <label>Song Genre: <i class='bx bxs-music bx-burst' ></i></i></label><br/>
+  <input type="text" name="genre" placeholder="Enter Song Genre" required>
+  
+  <br><br>
+  
+  <label>Song Link: <i class='bx bx-link bx-tada bx-flip-horizontal' ></i></label><br/>
+  <input type="text" name="link" placeholder="Paste Link here" required>
+  
+  <br><br>
+
+  
+  <input type="submit" value="ADD SONGS" class="btn">
+  
+ 
+  </form>
+  <br/>
+  <form action="/logout"method="post">
+     <!-- logout -->
+  
+  <input type="submit" value="LOGOUT" class="logout">
+  </form>
+
+</body>
+</html>

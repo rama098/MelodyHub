@@ -1,0 +1,45 @@
+@charset "ISO-8859-1";
+.btn{
+	border-radius:10px;
+	padding:10px;
+	cursor:pointer;
+	background-color:cyan;
+}
+.btn:hover{
+	background-color:purple;
+	color:Cyan;
+}
+i{
+	color:red;
+	font-size:larger;
+	font-size:50px;
+}
+body{
+	font-size:larger;
+	font-size:25px;
+	background-image:url('/image/platlist.jpg');
+	background-position:center;
+	background-size:cover;
+	background-attachment:fixed;
+	color:#0000ff;
+}
+.in{
+	width:200px;
+	height:25px;
+	
+}
+h2{
+	text-align:center;
+	color:#00ffff;
+}
+.logout{
+border-radius:10px;
+width:100px;
+height:28px;
+background-color:blue;
+color:cyan;
+}
+.logout:hover{
+	background-color:purple;
+	color:red;
+}

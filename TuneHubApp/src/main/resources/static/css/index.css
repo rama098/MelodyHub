@@ -1,0 +1,57 @@
+@charset "ISO-8859-1";
+body{
+	color:magenta;
+	text-align:center;
+	background-image:url('/image/img4.jpg');
+	background-position:center;
+	background-size:cover;
+	background-attachment: fixed;
+	
+}
+a{
+	color:red;
+	text-size:10px;
+	font-size:larger;
+	border:solid;
+	border-color:blue;
+	
+}
+a:active{
+	color:blue;
+	  text-decoration:underline;
+	  background-color:cyan;
+}
+a:hover {
+  color: magenta;
+  text-decoration: underline;
+   background-color: lightgreen;
+
+}
+a:link {
+  text-decoration: none;
+  background-color:yellow;
+}
+a {
+  background-color: #444;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+a {
+  background-color: #4CAF50; /* Green */
+}
+
+a {
+  background-color: #007BFF; /* Blue */
+}
+
+
